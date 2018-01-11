@@ -1,0 +1,32 @@
+{
+  "name": "snuggly-bubbles",
+  "version": "1.0.0",
+  "description": "A portfolio website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "sass-watch": "node-sass ./public/scss -o ./public/css -w -r -x --output-style compressed",
+    "sass": "node-sass ./public/scss -o ./public/css -r -x --output-style compressed",
+    "setup": "npm install && npm install node-sass -g --unsafe-perm && npm install cross-env livereload nodemon -g",
+    "update": "git pull && npm install",
+    "livereload": "livereload ./",
+    "dev": "cross-env NODE_ENV=dev npm-run-all --parallel start livereload sass-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordancaudill/snuggly-bubbles.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Jordan Caudill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordancaudill/snuggly-bubbles/issues"
+  },
+  "homepage": "https://github.com/jordancaudill/snuggly-bubbles#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "fullpage.js": "^2.9.5"
+  }
+}
