@@ -6,6 +6,10 @@ body {
     background-color: white !important;
 }
 
+.section.dark {
+    background-color: rgba(0, 0, 0, .9) !important;
+}
+
 svg#signature {
     overflow: visible;
     width: 80%;
@@ -76,6 +80,7 @@ h5 {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        color: white;
     }
     &.no-top {
         margin-top: 0px;
@@ -114,6 +119,18 @@ h2 {
     }
 }
 
+body:not(.fp-viewing-3-0) {
+    .fp-prev {
+        border-right-color: rgba(0, 0, 0, .7) !important;
+    }
+}
+
+body:not(.fp-viewing-3-3) {
+    .fp-next {
+        border-left-color: rgba(0, 0, 0, .7) !important;
+    }
+}
+
 p {
     font-family: 'Catamaran', sans-serif;
     max-width: 600px;
@@ -123,6 +140,11 @@ p {
     padding-right: 15px;
     text-align: justify;
     font-size: 18px;
+    &.text-center-me {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 
 .row {
