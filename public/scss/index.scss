@@ -2,6 +2,10 @@ body {
     font-family: 'Permanent Marker', sans-serif;
 }
 
+.section.white {
+    background-color: white !important;
+}
+
 svg#signature {
     overflow: visible;
     width: 80%;
@@ -69,11 +73,15 @@ h5 {
     }
     &#skills {
         position: absolute;
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
         width: 100%;
     }
+    &.no-top {
+        margin-top: 0px;
+    }
 }
+
 .stat {
     margin: 0 15px 0 15px;
     h4 {
@@ -93,9 +101,22 @@ h5 {
     }
 }
 
+h2 {
+    font-family: 'Catamaran', sans-serif;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, .7)
+    }
+}
+
 p {
     font-family: 'Catamaran', sans-serif;
-    max-width: 700px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
