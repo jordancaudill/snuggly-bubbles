@@ -2,7 +2,7 @@ body {
     font-family: 'Permanent Marker', sans-serif;
 }
 
-svg {
+svg#signature {
     overflow: visible;
     width: 80%;
     margin-left: 50%;
@@ -57,6 +57,51 @@ h6 {
     @media(min-width: 960px) {
         font-size: 40px;
     }
+}
+
+h5 {
+    text-align: center !important;
+    margin: 30px 0 0 0;
+    color: rgba(0, 0, 0, .7);
+    font-size: 30px;
+    @media(min-width: 960px) {
+        font-size: 40px;
+    }
+    &#skills {
+        position: absolute;
+        margin-left:auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+.stat {
+    margin: 0 15px 0 15px;
+    h4 {
+        font-family: 'Catamaran', sans-serif;
+        margin: 0;
+        text-align: center;
+        font-weight: normal;
+    }
+    h3 {
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+        @media(min-width: 960px) {
+            font-size: 36px;
+        }
+        color: rgba(0, 0, 0, .7);
+    }
+}
+
+p {
+    font-family: 'Catamaran', sans-serif;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 .row {

@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/jordancaudill/snuggly-bubbles#readme",
   "dependencies": {
+    "d3": "^4.12.2",
     "express": "^4.16.2",
-    "fullpage.js": "^2.9.5"
+    "fullpage.js": "^2.9.5",
+    "moment": "^2.20.1"
   }
 }
