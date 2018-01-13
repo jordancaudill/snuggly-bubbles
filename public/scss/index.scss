@@ -23,7 +23,7 @@ svg#signature {
     }
     path {
         fill: none;
-        stroke-width: 22;
+        stroke-width: 28;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-dasharray: 100%;
@@ -113,10 +113,11 @@ h2 {
     text-align: center;
     font-weight: normal;
     font-size: 20px;
-    a {
-        text-decoration: none;
-        color: rgba(0, 0, 0, .7)
-    }
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7)
 }
 
 body:not(.fp-viewing-3-0) {
@@ -125,10 +126,49 @@ body:not(.fp-viewing-3-0) {
     }
 }
 
+body.fp-viewing-3-0 .fp-prev {
+    display: none;
+}
+
 body:not(.fp-viewing-3-3) {
     .fp-next {
         border-left-color: rgba(0, 0, 0, .7) !important;
     }
+}
+
+body.fp-viewing-3-3 .fp-next {
+    display: none;
+}
+
+img.slide-img {
+    width: auto;
+    height: 30vh;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 30vh;
+    @media(min-width: 960px) {
+        position: relative;
+        width: auto;
+        height: 80vh;
+        left: -25vw;
+        max-width: 100vw;
+        max-height: 100vh;
+        &.shift {
+            left: -15vw;
+        }
+    }
+}
+
+.slide-content {
+    @media(min-width: 960px) {
+        position: relative;
+        right: 15vw;
+    }
+}
+
+.fp-tableCell {
+    overflow: hidden;
 }
 
 p {
@@ -139,7 +179,10 @@ p {
     padding-left: 15px;
     padding-right: 15px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
+    @media(min-width: 960px) {
+        font-size: 18px;
+    }
     &.text-center-me {
         margin-top: 50px;
         margin-bottom: 10px;
@@ -165,6 +208,18 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.column-mob {
+    @media(max-width: 959px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 .space-between {

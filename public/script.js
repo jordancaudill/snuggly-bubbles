@@ -40,16 +40,27 @@ var app = new Vue({
     },
     created() {
         var sections = $('.section');
-        // this.getActivity();
+        this.getActivity();
         for (var i = 0; i < sections.length; i++) {
             var color = this.getRandomColor();
             sections[i].style.backgroundColor = color;
         }
         $(document).ready(function () {
-            $('#fullpage').fullpage();
+            $('#fullpage').fullpage({
+                afterLoad: function (anchorLink, index) {
+                    if (index === 3) {
+                        // scrolled to chart section
+                        chartComponent.createChart();
+                    } else {
+                        $('svg#chart').html('');
+                    }
+                }
+            });
+
         });
         setTimeout(function () {
             $('h6').addClass('fadeIn');
-        }, 7500);
+        }, 5500);
     }
 });
+var chartComponent = app.$refs.chart;

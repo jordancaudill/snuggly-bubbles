@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="public/css/cssanimation.min.css">
     <link rel="stylesheet" href="node_modules/fullpage.js/dist/jquery.fullpage.min.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Permanent+Marker" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="public/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="public/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="public/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="public/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="public/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="public/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="public/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="public/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="public/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="public/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -19,7 +36,7 @@
                 <signature></signature>
                 <h6 class="cssanimation">WEB DEVELOPER</h6>
             </div>
-            <div class="section white center center-y">
+            <div class="section white center center-y about">
                 <h5>About</h5>
                 <p>I'm a {{age}} year old web developer working in the eSports industry and living in Houston, TX. I have a
                     deep understanding of both front-end and back-end web technologies, with experience in fast-pace development
@@ -42,20 +59,55 @@
             </div>
             <div class="section skills dark">
                 <h5 id="skills">Skills</h5>
-                <chart></chart>
+                <chart ref="chart"></chart>
             </div>
             <div class="section white">
                 <div class="slide">
-                    <h5>PvP Live</h5>
+                    <div class="row column-mob">
+                        <img class="slide-img" src="public/img/pvplive.svg">
+                        <div class="slide-content column center">
+                            <h5>PvP Live</h5>
+                            <p class="work-desc">As my first full-time development position,
+                                <a href="https://pvplive.com">PvP Live</a> hired me to build out the front-end for their new online gaming competition
+                                platform. The website includes tournament brackets, live chat, news, transactions, and a
+                                ranking system.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide">
-                    <h5>Coin Collector</h5>
+                    <div class="row column-mob">
+                        <img class="slide-img" src="public/img/bitcoin.svg">
+                        <div class="slide-content column center">
+                            <h5>Happy Little Coins</h5>
+                            <p class="work-desc">I trade cryptocurrency in several different markets, so I wanted a more elegant way to track
+                                my investments than just a spreadsheet. I used Electron to create a desktop application to
+                                track my investments, market prices, and ROIs. The open source code is available on my
+                                <a
+                                    href="https://github.com/jordancaudill/happy-little-coins">Github</a>.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide">
-                    <h5>Team Statter</h5>
+                    <div class="row column-mob">
+                        <img class="slide-img shift" src="public/img/connie.png">
+                        <div class="slide-content column center">
+                            <h5>Coin Collector</h5>
+                            <p class="work-desc">I created a Twitch extension that allows viewers to use a small portion of their computer's processing
+                                power to farm cryptocurrency for broadcasters they wish to support. It includes a front-end
+                                panel, a back-end proxy service, and a database to track viewer mining progress.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide">
-                    <h5>Happy Little Coins</h5>
+                    <div class="row column-mob">
+                        <img class="slide-img shift" src="public/img/teamstatter.png">
+                        <div class="slide-content column center">
+                            <h5>Team Statter</h5>
+                            <p class="work-desc">In order to help some competitive League of Legends teams analyze their matches, I developed
+                                a web app that presented match history data from the Riot Games API in the form of various
+                                interactive charts.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section column center center">
@@ -70,6 +122,10 @@
                 <h5 class="no-top">LinkedIn</h5>
                 <h2>
                     <a href="https://www.linkedin.com/in/jordancaudill">linkedin.com/in/jordancaudill</a>
+                </h2>
+                <h5 class="no-top">GitHub</h5>
+                <h2>
+                    <a href="https://github.com/jordancaudill">github.com/jordancaudill</a>
                 </h2>
             </div>
         </div>

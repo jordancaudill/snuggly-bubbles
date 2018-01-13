@@ -9,7 +9,7 @@ Vue.component('signature',
                         var j = i;
                         setTimeout(function () {
                             component.$el.querySelector('#_' + j + ' path').classList.add('animate');
-                        }, j * 300);
+                        }, j * 200);
 
                     }
                 }
