@@ -14,4 +14,4 @@ RUN npm run setup
 COPY . .
 
 EXPOSE 443
-CMD [ "npm", "run dev" ]
+CMD [ "npm", "run", "dev" ]
