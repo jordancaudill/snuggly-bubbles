@@ -13,5 +13,5 @@ RUN npm run setup
 # Bundle app source
 COPY . .
 
-EXPOSE 443
-CMD [ "npm", "run", "dev" ]
+EXPOSE 80
+CMD [ "npm", "run", "start" ]
