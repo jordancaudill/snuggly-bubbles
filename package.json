@@ -29,6 +29,8 @@
     "d3": "^4.12.2",
     "express": "^4.16.2",
     "fullpage.js": "^2.9.5",
-    "moment": "^2.20.1"
+    "moment": "^2.20.1",
+    "particlesjs": "^2.2.2",
+    "trianglify": "^1.2.0"
   }
 }

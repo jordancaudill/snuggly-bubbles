@@ -2,144 +2,144 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jordan Caudill</title>
-    <link rel="stylesheet" href="public/css/index.css">
-    <link rel="stylesheet" href="public/css/cssanimation.min.css">
-    <link rel="stylesheet" href="node_modules/fullpage.js/dist/jquery.fullpage.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran|Permanent+Marker" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="57x57" href="public/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="public/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="public/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="public/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="public/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="public/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="public/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="public/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="public/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="public/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="public/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="public/img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Jordan Caudill</title>
+	<link rel="stylesheet" href="public/css/index.css">
+	<link rel="stylesheet" href="public/css/cssanimation.min.css">
+	<link rel="stylesheet" href="node_modules/fullpage.js/dist/jquery.fullpage.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran|Permanent+Marker" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="57x57" href="public/img/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="public/img/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="public/img/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="public/img/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="public/img/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="public/img/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="public/img/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="public/img/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="public/img/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="public/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="public/img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="public/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="public/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="public/img/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <div id="app">
-        <div id="fullpage">
-            <div class="section column center center-y">
-                <signature></signature>
-                <h6 class="cssanimation">WEB DEVELOPER</h6>
-            </div>
-            <div class="section white center center-y about">
-                <h5>About</h5>
-                <p>I'm a {{age}} year old web developer working in the eSports industry and living in Houston, TX. I have a
-                    deep understanding of both front-end and back-end web technologies, with experience in fast-pace development
-                    environments and leadership roles. I like dogs, taking my dog on walks, and petting my dog.</p>
-                <p class="text-center-me">Here's how I'm doing today:</p>
-                <div class="row center">
-                    <div class="stat">
-                        <h3>{{steps}}</h3>
-                        <h4>steps taken</h4>
-                    </div>
-                    <div class="stat">
-                        <h3>{{heartrate}}</h3>
-                        <h4>heartbeats/min</h4>
-                    </div>
-                    <div class="stat">
-                        <h3>{{sleep}}</h3>
-                        <h4>hours slept</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="section skills dark">
-                <h5 id="skills">Skills</h5>
-                <chart ref="chart"></chart>
-            </div>
-            <div class="section white">
-                <div class="slide">
-                    <div class="row column-mob">
-                        <img class="slide-img" src="public/img/pvplive.svg">
-                        <div class="slide-content column center">
-                            <h5>PvP Live</h5>
-                            <p class="work-desc">As my first full-time development position,
-                                <a href="https://pvplive.com">PvP Live</a> hired me to build out the front-end for their new online gaming competition
-                                platform. The website includes tournament brackets, live chat, news, transactions, and a
-                                ranking system.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="row column-mob">
-                        <img class="slide-img" src="public/img/bitcoin.svg">
-                        <div class="slide-content column center">
-                            <h5>Happy Little Coins</h5>
-                            <p class="work-desc">I trade cryptocurrency in several different markets, so I wanted a more elegant way to track
-                                my investments than just a spreadsheet. I used Electron to create a desktop application to
-                                track my investments, market prices, and ROIs. The open source code is available on my
-                                <a
-                                    href="https://github.com/jordancaudill/happy-little-coins">Github</a>.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="row column-mob">
-                        <img class="slide-img shift" src="public/img/connie.png">
-                        <div class="slide-content column center">
-                            <h5>Coin Collector</h5>
-                            <p class="work-desc">I created a Twitch extension that allows viewers to use a small portion of their computer's processing
-                                power to farm cryptocurrency for broadcasters they wish to support. It includes a front-end
-                                panel, a back-end proxy service, and a database to track viewer mining progress.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="row column-mob">
-                        <img class="slide-img shift" src="public/img/teamstatter.png">
-                        <div class="slide-content column center">
-                            <h5>Team Statter</h5>
-                            <p class="work-desc">In order to help some competitive League of Legends teams analyze their matches, I developed
-                                a web app that presented match history data from the Riot Games API in the form of various
-                                interactive charts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section column center center">
-                <h5 class="no-top">Twitter</h5>
-                <h2>
-                    <a href="https://twitter.com/jcaudill74">twitter.com/jcaudill74</a>
-                </h2>
-                <h5 class="no-top">Email</h5>
-                <h2>
-                    <a href="mailto:jacaudill74@gmail.com">jacaudill74@gmail.com</a>
-                </h2>
-                <h5 class="no-top">LinkedIn</h5>
-                <h2>
-                    <a href="https://www.linkedin.com/in/jordancaudill">linkedin.com/in/jordancaudill</a>
-                </h2>
-                <h5 class="no-top">GitHub</h5>
-                <h2>
-                    <a href="https://github.com/jordancaudill">github.com/jordancaudill</a>
-                </h2>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="node_modules/moment/min/moment.min.js"></script>
-    <script src="node_modules/d3/build/d3.min.js"></script>
-    <script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="public/signature.js"></script>
-    <script src="public/chart.js"></script>
-    <script src="public/script.js"></script>
-    <script src="public/letteranimation.min.js"></script>
+	<div id="app">
+		<div style="opacity: 0" id="fullpage">
+			<div class="section column center center-y">
+				<signature></signature>
+				<h6 class="cssanimation">WEB DEVELOPER</h6>
+			</div>
+			<div class="section white center center-y about">
+				<h5>About</h5>
+				<p>I'm a {{age}} year old web developer working in the eSports industry and living in Houston, TX. I have a deep understanding
+					of both front-end and back-end web technologies, with experience in fast-pace development environments and leadership
+					roles. I like dogs, taking my dog on walks, and petting my dog.</p>
+				<p class="text-center-me">Here's how I'm doing today:</p>
+				<div class="row center">
+					<div class="stat">
+						<h3>{{steps}}</h3>
+						<h4>steps taken</h4>
+					</div>
+					<div class="stat">
+						<h3>{{heartrate}}</h3>
+						<h4>heartbeats/min</h4>
+					</div>
+					<div class="stat">
+						<h3>{{sleep}}</h3>
+						<h4>hours slept</h4>
+					</div>
+				</div>
+			</div>
+			<div class="section skills">
+				<h5 id="skills">Skills</h5>
+				<chart ref="chart"></chart>
+				<canvas class="particle-bg"></canvas>
+
+			</div>
+			<div class="section white">
+				<div class="slide">
+					<div class="row column-mob">
+						<img class="slide-img" src="public/img/pvplive.svg">
+						<div class="slide-content column center">
+							<h5>PvP Live</h5>
+							<p class="work-desc">As my first full-time development position, PvP Live hired me to build out the front-end for their new online gaming
+								competition platform. The website includes tournament brackets, live chat, news, transactions, and a ranking system.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row column-mob">
+						<img class="slide-img" src="public/img/bitcoin.svg">
+						<div class="slide-content column center">
+							<h5>Happy Little Coins</h5>
+							<p class="work-desc">I trade cryptocurrency in several different markets, so I wanted a more elegant way to track my investments than just
+								a spreadsheet. I used Electron to create a desktop application to track my investments, market prices, and ROIs.
+								The open source code is available on my
+								<a href="https://github.com/jordancaudill/happy-little-coins">Github</a>.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row column-mob">
+						<img class="slide-img shift" src="public/img/connie.png">
+						<div class="slide-content column center">
+							<h5>Coin Collector</h5>
+							<p class="work-desc">I created a Twitch extension that allows viewers to use a small portion of their computer's processing power to farm
+								cryptocurrency for broadcasters they wish to support. It includes a front-end panel, a back-end proxy service, and
+								a database to track viewer mining progress.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="row column-mob">
+						<img class="slide-img shift" src="public/img/teamstatter.png">
+						<div class="slide-content column center">
+							<h5>Team Statter</h5>
+							<p class="work-desc">In order to help some competitive League of Legends teams analyze their matches, I developed a web app that presented
+								match history data from the Riot Games API in the form of various interactive charts.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section column center center">
+				<h5 class="no-top">Twitter</h5>
+				<h2>
+					<a href="https://twitter.com/jcaudill74">twitter.com/jcaudill74</a>
+				</h2>
+				<h5 class="no-top">Email</h5>
+				<h2>
+					<a href="mailto:jacaudill74@gmail.com">jacaudill74@gmail.com</a>
+				</h2>
+				<h5 class="no-top">LinkedIn</h5>
+				<h2>
+					<a href="https://www.linkedin.com/in/jordancaudill">linkedin.com/in/jordancaudill</a>
+				</h2>
+				<h5 class="no-top">GitHub</h5>
+				<h2>
+					<a href="https://github.com/jordancaudill">github.com/jordancaudill</a>
+				</h2>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	 crossorigin="anonymous"></script>
+	<script src="node_modules/trianglify/dist/trianglify.min.js"></script>
+	<script src="node_modules/particlesjs/dist/particles.min.js"></script>
+	<script src="node_modules/moment/min/moment.min.js"></script>
+	<script src="node_modules/d3/build/d3.min.js"></script>
+	<script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="public/signature.js"></script>
+	<script src="public/chart.js"></script>
+	<script src="public/script.js"></script>
+	<script src="public/letteranimation.min.js"></script>
 </body>
 
 </html>
